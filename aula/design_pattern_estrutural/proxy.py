@@ -13,7 +13,7 @@ class Dog:
 
 # Proxy para interagir com banco de dados SQLite3
 class DbProxy:
-    def __init__(self, database_path='dogs.db'):
+    def __init__(self, database_path='catioooros.db'):
         self.database_path = database_path
 
     # Função responsável por inserir um cão no banco de dados
