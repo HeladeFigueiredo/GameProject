@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/aula/design_pattern_estrutural/adapter.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/aula/design_pattern_estrutural/proxy.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/aula/sqlite/criar-tabela-popular.py" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/aula/sqlite/ler-tabela.py" dialect="GenericSQL" />
