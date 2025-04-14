@@ -2,17 +2,23 @@
 
 #Este é o decorator da classe
 class Carro:
-    def __init__(self, classe_decorada): #O parâmetro classe_decorada será a classe que Carro vai decorar, no caso Automovel
+    def __init__(self, classe_decorada):
+        #O parâmetro classe_decorada será a classe que Carro vai decorar, no caso Automovel
         self.classe_decorada = classe_decorada
 
-    def __call__(self, *args, **kwargs): #Função será executada quando instanciar a classe Automovel. Recebe os argumentos que serão passados para o construtor da classe Automovel
-        instancia_classe = self.classe_decorada(*args, **kwargs) #Aqui cria uma instância da classe Automovel usando os argumentos recebidos
+    def __call__(self, *args, **kwargs):
+        # Função será executada quando instanciar a classe Automovel.
+        # Recebe os argumentos que serão passados para o construtor da classe Automovel
+        # Aqui cria uma instância da classe Automovel usando os argumentos recebidos
+        instancia_classe = self.classe_decorada(*args, **kwargs)
 
-        instancia_classe.num_rodas = 4 #Está adicionando um atributo a mais na classe Automovel
+        # Está adicionando um atributo a mais na classe Automovel
+        instancia_classe.num_rodas = 4
         return instancia_classe
 
-#Esta é a classe
-#Como ela é @carro, sempre que eu instanciar a classe automóvel, o função __call__ da classe Carro será chamada
+# Esta é a classe
+# Como ela é @carro, sempre que eu instanciar a classe automóvel
+# A função __call__ da classe Carro será chamada
 @Carro
 class Automovel:
     def __init__(self, modelo):

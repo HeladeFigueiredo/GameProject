@@ -17,7 +17,7 @@ def minha_funcao():
 
 minha_funcao()
 
-# # Exemplo 2
+# Exemplo 2
 #
 # def medir_tempo(funcao):
 #     def wrapper(*args, **kwargs):

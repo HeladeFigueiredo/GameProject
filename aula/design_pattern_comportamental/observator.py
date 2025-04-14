@@ -80,5 +80,5 @@ mensageiro.enviar_mensagem_para_todos_observadores_inscritos('Admin', 'Bem-vindo
 #Será enviado a mensagem do Admin para todos os presente no grupo1, no caso Maria e João
 grupo1.enviar_mensagem('Admin', 'Nova reunião marcada para amanhã.')
 
-#Serpa enviado a mensagem de Alice para o usuario3, no caso Camila
+#Sera enviado a mensagem de Alice para o usuario3, no caso Camila
 usuario3.enviar_mensagem('Alice', 'Oi, tudo bem?')
