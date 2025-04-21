@@ -1,4 +1,4 @@
-from code.const import WINDOW_WIDTH, ENTITY_SPEED
+from code.const import ENTITY_SPEED, WIN_WIDTH
 from code.entity import Entity
 
 class Background(Entity):
@@ -8,5 +8,4 @@ class Background(Entity):
     def move(self):
         self.rect.centerx -= ENTITY_SPEED[self.name] #Velocidade das imagens
         if self.rect.right <= 0:
-            self.rect.left = WINDOW_WIDTH
-        pass
+            self.rect.left = WIN_WIDTH

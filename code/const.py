@@ -1,16 +1,18 @@
 # Representa o tamanho da janela aberta
 import pygame
 
-WINDOW_WIDTH = 576
-WINDOW_HEIGHT = 324
+WIN_WIDTH = 576
+WIN_HEIGHT = 324
 
 # Representam as cores usadas
 COLOR_ORANGE = (255, 69, 0)
 COLOR_WHITE = (255, 255, 255)
 COLOR_YELLOW = (255, 255, 0)
+COLOR_GREEN = (0, 128, 0)
+COLOR_CIAN = (0, 128, 128)
 
 #Opções do menu
-MENU_OPTIONS = (
+MENU_OPTION = (
     'NEW GAME 1P',
     'NEW GAME 2P - COOP',
     'NEW GAME 2P - COMP',
@@ -85,4 +87,77 @@ EVENT_ENEMY = pygame.USEREVENT + 1
 
 # Tempo para spawnar inimigos
 SPAWN_TIME = 4000
+
+TIMEOUT_LEVEL = 20000  # 20s
+TIMEOUT_STEP = 100  # 100ms
+EVENT_TIMEOUT = pygame.USEREVENT + 2
+
+ENTITY_DAMAGE = {
+    'Level1Bg0': 0,
+    'Level1Bg1': 0,
+    'Level1Bg2': 0,
+    'Level1Bg3': 0,
+    'Level1Bg4': 0,
+    'Level1Bg5': 0,
+    'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
+    'Player1': 1,
+    'Player1Shot': 25,
+    'Player2': 1,
+    'Player2Shot': 20,
+    'Enemy1': 1,
+    'Enemy1Shot': 20,
+    'Enemy2': 1,
+    'Enemy2Shot': 15,
+}
+
+ENTITY_SCORE = {
+    'Level1Bg0': 0,
+    'Level1Bg1': 0,
+    'Level1Bg2': 0,
+    'Level1Bg3': 0,
+    'Level1Bg4': 0,
+    'Level1Bg5': 0,
+    'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
+    'Player1': 0,
+    'Player1Shot': 0,
+    'Player2': 0,
+    'Player2Shot': 0,
+    'Enemy1': 100,
+    'Enemy1Shot': 0,
+    'Enemy2': 125,
+    'Enemy2Shot': 0,
+}
+
+SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
+             'EnterName': (WIN_WIDTH / 2, 80),
+             'Label': (WIN_WIDTH / 2, 90),
+             'Name': (WIN_WIDTH / 2, 110),
+             0: (WIN_WIDTH / 2, 110),
+             1: (WIN_WIDTH / 2, 130),
+             2: (WIN_WIDTH / 2, 150),
+             3: (WIN_WIDTH / 2, 170),
+             4: (WIN_WIDTH / 2, 190),
+             5: (WIN_WIDTH / 2, 210),
+             6: (WIN_WIDTH / 2, 230),
+             7: (WIN_WIDTH / 2, 250),
+             8: (WIN_WIDTH / 2, 270),
+             9: (WIN_WIDTH / 2, 290),
+             }
+
+ENTITY_SHOT_DELAY = {
+    'Player1': 20,
+    'Player2': 15,
+    'Enemy1': 100,
+    'Enemy2': 200,
+}
 
